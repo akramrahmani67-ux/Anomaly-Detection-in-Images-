@@ -53,3 +53,21 @@ These models are CNN-based or hybrid CNN-Transformer architectures and are used 
 ```bash
 pip install -r requirements.txt
 
+
+Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks
+
+Authors:
+1. Akram Rahmani
+2. Seyfollah Soleimani*
+
+Affiliation:
+Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran
+
+Corresponding Author:
+Dr. Seyfollah Soleimani
+📧 Email: s-soleimani@araku.ac.ir
+
+📄 Manuscript Status:
+This work, titled “Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks,” is currently under review for publication in The Visual Computer (Springer Nature) journal. The repository may be updated as the review process progresses or after acceptance to include final revisions, datasets, and code documentation.
+
+
