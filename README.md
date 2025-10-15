@@ -40,7 +40,7 @@ The following pre-trained models were used for feature extraction:
 | MaxViT     | `anomaly_features_maxvit_tiny_tf_224.npy` | `normal_features_maxvit_tiny_tf_224.npy` |
 | MobileOne  | `anomaly_features_mobileone_s0.npy` | `normal_features_mobileone_s0.npy` |
 | PoolFormer | `anomaly_features_poolformer_s12.npy` | `normal_features_poolformer_s12.npy` |
-| RepVGG     | `anomaly_features_repvgg_a0.npy` | Not available |
+| RepVGG     | `anomaly_features_repvgg_a0.npy` |`normal_features_repvgg_a0.npy`   |
 
 These models are CNN-based or hybrid CNN-Transformer architectures and are used to extract meaningful features from both normal and anomalous frames.
 
