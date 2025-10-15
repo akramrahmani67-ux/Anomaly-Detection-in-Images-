@@ -99,6 +99,7 @@ final revisions and detailed code documentation.
   author={Rahmani, Akram and Soleimani, Seyfollah},
   journal={The Visual Computer},
   year={2025},
-  note={Manuscript under review; repository may be updated upon acceptance.}
+  note={Manuscript under review; repository may be updated upon acceptance. DOI: 10.5281/zenodo.17362656}
 }
 </pre>
+
