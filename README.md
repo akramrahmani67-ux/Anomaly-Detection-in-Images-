@@ -46,28 +46,59 @@ These models are CNN-based or hybrid CNN-Transformer architectures and are used 
 
 ---
 
-## 🚀 How to Run
+ <h2>Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks</h2>
 
-1. Install dependencies:
+<h3>How to Run</h3>
 
-```bash
-pip install -r requirements.txt
+<p>
+This project was developed and executed in the <b>Google Colab</b> environment using an <b>NVIDIA A100 GPU</b>. 
+All experiments, including feature extraction, sequential modeling (LSTM and GRU), and visualization with Grad-CAM++, 
+were implemented and tested directly in Colab without requiring any manual hardware configuration.
+</p>
 
+<p>
+To reproduce the results:
+</p>
 
-Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks
+<ol>
+  <li>Open the provided <code>.ipynb</code> files in Google Colab.</li>
+  <li>Ensure GPU acceleration is enabled (<b>Runtime → Change runtime type → Hardware accelerator → GPU</b>).</li>
+  <li>Execute the notebook cells in sequence to reproduce training, evaluation, and visualization steps.</li>
+</ol>
 
-Authors:
-1. Akram Rahmani
-2. Seyfollah Soleimani*
+<h3>Authors</h3>
+<p>
+1. <b>Akram Rahmani</b><br>
+2. <b>Seyfollah Soleimani*</b>
+</p>
 
-Affiliation:
-Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran
+<h3>Affiliation</h3>
+<p>
+Department of Computer Engineering, Faculty of Engineering,<br>
+Arak University, Arak 38156-8-8349, Iran
+</p>
 
-Corresponding Author:
-Dr. Seyfollah Soleimani
-📧 Email: s-soleimani@araku.ac.ir
+<h3>Corresponding Author</h3>
+<p>
+<b>Dr. Seyfollah Soleimani</b><br>
+📧 Email: <a href="mailto:s-soleimani@araku.ac.ir">s-soleimani@araku.ac.ir</a>
+</p>
 
-📄 Manuscript Status:
-This work, titled “Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks,” is currently under review for publication in The Visual Computer (Springer Nature) journal. The repository may be updated as the review process progresses or after acceptance to include final revisions, datasets, and code documentation.
+<h3>Manuscript Status</h3>
+<p>
+This work, titled <i>“Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks,”</i> 
+is currently under review for publication in <b>The Visual Computer (Springer Nature)</b> journal. 
+The repository may be updated as the review process progresses or after acceptance to include 
+final revisions and detailed code documentation.
+</p>
 
-
+<h3>Citation</h3>
+<pre>
+@article{rahmani2025anomaly,
+  title={Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks},
+  author={Rahmani, Akram and Soleimani, Seyfollah},
+  journal={The Visual Computer},
+  year={2025},
+  note={Manuscript under review; repository may be updated upon acceptance.}
+}
+</pre>
