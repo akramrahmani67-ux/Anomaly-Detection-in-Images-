@@ -1,4 +1,4 @@
-# Anomaly-Detection-in-Images-
+# Anomaly Detection in Images
 # Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks
 Anomaly detection in images is crucial for visual surveillance and industrial inspection. 
 Traditional methods often struggle with subtle or context-aware anomalies.
