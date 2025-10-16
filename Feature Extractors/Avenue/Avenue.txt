@@ -1,0 +1,12 @@
+Anomaly Detection Feature Extractors – Avenue Dataset
+Included Feature Extractor Models:
+ConvNeXt-tiny: Lightweight convolutional transformer for extracting robust features.
+RepVGG-a0: VGG-style architecture with re-parameterization for faster inference.
+MobileOne-s0: Efficient CNN model optimized for speed and low memory usage.
+PoolFormer-s12: Transformer-like model using pooling as the main token-mixing operation.
+MaxViT-tiny-TF-224: Vision transformer integrating convolution and self-attention for hierarchical feature extraction.
+CoAtNet-0-RW-224: Convolution-attention hybrid network combining the benefits of CNNs and Transformers.
+Dropbox Link (contains 12 files):
+https://www.dropbox.com/scl/fo/uvj2i4kaqnj425rb232vt/ADTsWLQjx-Fi-eJ9C7c9cVg?rlkey=02g9u1c5ejkhi2umk0pbs96fc&st=be1ubtml&dl=0
+
+This link contains 12 .npy files, representing both normal and abnormal samples extracted from the Avenue dataset. 
