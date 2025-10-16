@@ -1,105 +1,67 @@
-# 🧠 Anomaly Detection in Images  
-## Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks  
+ Anomaly Detection in Images  
+## Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks
 
-### **Abstract**  
-Image anomaly detection is a crucial requirement for visual surveillance and industrial quality inspection. However, most prior works fail to perform well in cases of subtle or contextual anomalies.  
-In this paper, a **hybrid framework** is introduced that incorporates **pre-trained vision models**, **sequence-based networks (LSTM, GRU)**, and the **explainable mechanism Grad-CAM++**.  
-The pre-trained models learn rich spatial representations from image frames, while sequence-based models learn temporal dependencies among image frames. Grad-CAM++ provides interpretability by localizing regions contributing to anomaly decisions.  
-
----
-
-### **1. Introduction**  
-Anomaly detection in images aims to identify patterns or regions that deviate from normal behavior. It is widely used in domains such as:  
-- Industrial defect detection  
-- Surveillance video analysis  
-- Medical imaging  
-
-Traditional methods often rely on handcrafted features, which are limited in capturing complex spatial and temporal dependencies. The proposed framework leverages the strengths of **deep pre-trained architectures** and **sequence-based temporal learning**, resulting in robust and explainable anomaly detection.
+### Abstract
+Image anomaly detection is essential for visual surveillance and industrial inspection. Traditional approaches often fail on subtle or context-dependent anomalies.  
+This work proposes a **hybrid framework** that combines pre-trained vision backbones for spatial feature extraction with sequence models (LSTM, GRU, Simple RNN) to capture temporal dynamics, and uses Grad-CAM++ for interpretable localization of anomalous regions.  
+Experimental results on multiple benchmarks demonstrate strong performance and reliable localization of anomalies.
 
 ---
 
-### **2. Datasets Used**
-The framework was evaluated on several benchmark datasets:  
+## 📊 Benchmark Datasets
+The experiments use four publicly available datasets. Place original dataset files under the `/datasets` directory to re-run the full pipeline (feature extraction + sequential modeling).
 
-| Dataset | Description | Link |
-|----------|--------------|------|
-| UCSD Ped1 | Pedestrian dataset for anomaly detection | [UCSD Ped1 Dataset](https://www.svcl.ucsd.edu/projects/anomaly/dataset.htm) |
-| UCSD Ped2 | Similar to Ped1 but with different camera angles | [UCSD Ped2 Dataset](https://www.svcl.ucsd.edu/projects/anomaly/dataset.htm) |
-| Avenue | Video dataset for abnormal events | [CUHK Avenue Dataset](https://github.com/StevenLiuWen/ano_pred_cvpr2018) |
-| ShanghaiTech | Large-scale dataset for anomaly detection | [ShanghaiTech Dataset](https://svip-lab.github.io/dataset/campus_dataset.html) |
+- **UCSD Ped1 & Ped2** — Pedestrian walkways under different conditions for motion anomaly detection.  
+  [Official page](http://www.svcl.ucsd.edu/projects/anomaly/dataset.htm)
 
-Each dataset provides both training and testing sequences, allowing separate evaluation on normal and abnormal behaviors.
+- **Avenue** — Street surveillance scenes containing subtle and contextual anomalies.  
+  [Official page](https://cs-people.bu.edu/hamed/avenue_dataset.html)
 
----
-
-### **3. Proposed Hybrid Framework**
-The proposed system consists of three main stages:
-
-1. **Feature Extraction**  
-   - Pre-trained CNNs such as **VGG16**, **ResNet50**, and **EfficientNet** are used to extract deep spatial features from frames.  
-   - These features represent texture, structure, and contextual information of images.
-
-2. **Temporal Modeling**  
-   - Sequential neural networks (**LSTM** and **GRU**) capture the **temporal evolution** of visual patterns across consecutive frames.  
-   - This helps detect motion-based or context-based anomalies.
-
-3. **Explainability Module**  
-   - **Grad-CAM++** visualizes the key regions responsible for anomaly detection decisions, enhancing interpretability and trustworthiness of the model.
+- **UMN** — Simulated panic scenarios recorded in several environments.  
+  [Official page](https://mha.cs.umn.edu/Movies/UMN_Anomaly_Detection.html)
 
 ---
 
-### **4. Implementation Details**
+## ⚙️ Feature Extractors
+Several state-of-the-art pre-trained backbones were used to extract spatial features from frames, which were then provided to sequence models for temporal modeling.
 
-- **Programming Environment:** Python (TensorFlow / Keras)  
-- **Hardware:** NVIDIA GPU (A100 used for experiments)  
-- **Optimizer:** Adam  
-- **Loss Function:** Binary Cross-Entropy  
-- **Metrics:** Accuracy, Precision, Recall, F1-score, and AUC  
+| Model | Example anomaly features file (.npy) | Example normal features file (.npy) |
+|-------|--------------------------------------|-------------------------------------|
+| CoAtNet-0-RW-224 | anomaly_features_coatnet_0_rw_224.npy | normal_features_coatnet_0_rw_224.npy |
+| ConvNeXt-tiny | anomaly_features_convnext_tiny.npy | normal_features_convnext_tiny.npy |
+| MaxViT-tiny-TF-224 | anomaly_features_maxvit_tiny_tf_224.npy | normal_features_maxvit_tiny_tf_224.npy |
+| MobileOne-s0 | anomaly_features_mobileone_s0.npy | normal_features_mobileone_s0.npy |
+| PoolFormer-s12 | anomaly_features_poolformer_s12.npy | normal_features_poolformer_s12.npy |
+| RepVGG-a0 | anomaly_features_repvgg_a0.npy | normal_features_repvgg_a0.npy |
 
-Data augmentation and normalization were applied to improve generalization.
-
----
-
-### **5. Experimental Results**
-
-| Model | Accuracy (%) | Precision (%) | Recall (%) | F1-score (%) | AUC |
-|--------|---------------|----------------|--------------|---------------|-----|
-| VGG16 + LSTM | 95.6 | 95.2 | 94.8 | 95.0 | 0.97 |
-| ResNet50 + GRU | 96.1 | 95.8 | 95.4 | 95.6 | 0.98 |
-| EfficientNet + LSTM | **97.3** | **96.8** | **96.9** | **96.8** | **0.99** |
-
-The hybrid design achieved significant improvements over single-model baselines, especially in detecting subtle contextual anomalies.
+These models are CNN- or CNN–Transformer hybrid architectures selected for robust spatial representations.
 
 ---
 
-### **6. Visualization and Explainability**
-Grad-CAM++ heatmaps were generated for both normal and abnormal samples.  
-- **Normal Frames:** Showed uniformly distributed activations.  
-- **Anomalous Frames:** Highlighted localized regions corresponding to unusual objects or motions (e.g., vehicles in pedestrian zones, running individuals, or abnormal interactions).
+## 📁 Pre-Extracted Feature Files (Download)
+Pre-extracted `.npy` feature files are shared via Dropbox. Each link contains **12 .npy files** representing normal and abnormal samples for the corresponding dataset.
+
+- **Avenue**: [Download link](https://www.dropbox.com/scl/fo/uvj2i4kaqnj425rb232vt/ADTsWLQjx-Fi-eJ9C7c9cVg?rlkey=02g9u1c5ejkhi2umk0pbs96fc&st=be1ubtml&dl=0)  
+- **UCSD Ped1**: [Download link](https://www.dropbox.com/scl/fo/j5zya2mz4xfqyqqgv7wac/AFxVNsxkhfVwjyf3jQuEQuM?rlkey=1ge2yikbbpw8a7smwbq63p3if&st=172oj2nx&dl=0)  
+- **UCSD Ped2**: [Download link](https://www.dropbox.com/scl/fo/lbse8zt94o24i8fyvnkd2/AMA66KNLLDbxFt3ij4EuLco?rlkey=09m8m0tygstpzow3b0n5uj5jk&st=oe274j3o&dl=0)  
+- **UMN**: [Download link](https://www.dropbox.com/scl/fo/095z706yk3rzhg6wd0yxa/ABbDGuAP4xsA9AMyyrRP8s0?rlkey=1ulqi6z9vzoqjxdnyqkqdazi2&st=9ieth52p&dl=0)  
+
+> Each link contains `.npy` files and a `.txt` describing the mapping of feature extractors to normal/abnormal samples.
 
 ---
 
-### **7. Conclusion**
-This work presents a **hybrid and interpretable deep learning framework** for anomaly detection in images and videos.  
-By combining **spatial feature extraction (CNN)**, **temporal modeling (LSTM/GRU)**, and **explainability (Grad-CAM++)**, the system achieves high detection accuracy and visual interpretability.  
-Future work may focus on real-time optimization and unsupervised anomaly learning.
+## 📊 Sequential Model Results (XLSX)
+The `Sequential_Model_Results_XLSX` folder includes Excel files summarizing the evaluation of sequential models on each dataset.
 
----
+- Results of Sequential Neural Networks for Avenue.xlsx  
+- Results of Sequential Neural Networks for UCSD Ped1.xlsx  
+- Results of Sequential Neural Networks for UCSD Ped2.xlsx  
+- Results of Sequential Neural Networks for UMN.xlsx  
 
-### **8. Citation**
-If you use this framework in your research, please cite as:  
+Metrics reported:
 
-```
-@article{rahmani2025anomaly,
-  title={Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks},
-  author={Rahmani, Akram and Soleimani, [Co-author name]},
-  journal={Signal Processing and Renewable Energy},
-  year={2025}
-}
-```
-
----
-
-### **9. Contact**
-For further questions or collaborations:  
-📧 **akramrahmani.research@gmail.com**
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score  
+- ROC-AUC  
