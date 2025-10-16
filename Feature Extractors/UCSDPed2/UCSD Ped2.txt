@@ -1,0 +1,21 @@
+Anomaly Detection Feature Extractors – UCSD Ped2 Dataset
+
+Included Feature Extractor Models:
+
+ConvNeXt-tiny
+
+RepVGG-a0
+
+MobileOne-s0
+
+PoolFormer-s12
+
+MaxViT-tiny-TF-224
+
+CoAtNet-0-RW-224
+
+Dropbox Link (contains 12 files):
+
+https://www.dropbox.com/scl/fo/lbse8zt94o24i8fyvnkd2/AMA66KNLLDbxFt3ij4EuLco?rlkey=09m8m0tygstpzow3b0n5uj5jk&st=oe274j3o&dl=0
+
+This link contains 12 .npy files, representing both normal and abnormal samples extracted from the UCSD Ped2 dataset.
