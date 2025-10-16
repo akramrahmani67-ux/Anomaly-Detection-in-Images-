@@ -1,0 +1,21 @@
+Anomaly Detection Feature Extractors – UMN Dataset
+
+Included Feature Extractor Models:
+
+ConvNeXt-tiny
+
+RepVGG-a0
+
+MobileOne-s0
+
+PoolFormer-s12
+
+MaxViT-tiny-TF-224
+
+CoAtNet-0-RW-224
+
+Dropbox Link (contains 12 files):
+
+https://www.dropbox.com/scl/fo/095z706yk3rzhg6wd0yxa/ABbDGuAP4xsA9AMyyrRP8s0?rlkey=1ulqi6z9vzoqjxdnyqkqdazi2&st=9ieth52p&dl=0
+
+This link contains 12 .npy files, representing both normal and abnormal samples extracted from the UMN dataset.
