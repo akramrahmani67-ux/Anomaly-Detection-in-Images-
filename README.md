@@ -44,6 +44,21 @@ The following pre-trained models were used for feature extraction:
 
 These models are CNN-based or hybrid CNN-Transformer architectures and are used to extract meaningful features from both normal and anomalous frames.
 
+Anomaly Detection Feature Extractors – Public Datasets
+
+For ease of feature extraction, you can directly access the pre-extracted .npy feature files for each dataset from the links below. These files contain both normal and abnormal feature samples generated using various pre-trained models such as ConvNeXt-tiny, RepVGG-a0, MobileOne-s0, PoolFormer-s12, MaxViT-tiny-TF-224, and CoAtNet-0-RW-224.
+
+Avenue Dataset
+🔗 Dropbox Link
+
+UCSD Ped1 Dataset
+🔗 Dropbox Link
+
+UCSD Ped2 Dataset
+🔗 Dropbox Link
+
+UMN Dataset
+🔗 Dropbox Link
 ---
 
  <h2>Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks</h2>
