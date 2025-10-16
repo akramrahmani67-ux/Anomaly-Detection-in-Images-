@@ -64,4 +64,30 @@ Metrics reported:
 - Precision  
 - Recall  
 - F1-Score  
-- ROC-AUC  
+- ROC-AUC
+  ## 👩‍💻 Authors
+Akram Rahmani  
+Seyfollah Soleimani* (Corresponding Author)  
+
+**Affiliation:** Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran  
+**Corresponding Author Email:** s-soleimani@araku.ac.ir
+
+---
+
+## 📜 Manuscript Status
+**Title:** Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks  
+**Current status:** Under review at *The Visual Computer* (Springer Nature)  
+> The repository will be updated following acceptance to include final revisions and full code release.
+
+---
+
+## 📚 Citation
+```bibtex
+@article{rahmani2025anomaly,
+  title={Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks},
+  author={Rahmani, Akram and Soleimani, Seyfollah},
+  journal={The Visual Computer},
+  year={2025},
+  note={Manuscript under review; repository will be updated upon acceptance. DOI: 10.5281/zenodo.17362656}
+}
+
