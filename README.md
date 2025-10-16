@@ -49,16 +49,14 @@ Anomaly Detection Feature Extractors – Public Datasets
 For ease of feature extraction, you can directly access the pre-extracted .npy feature files for each dataset from the links below. These files contain both normal and abnormal feature samples generated using various pre-trained models such as ConvNeXt-tiny, RepVGG-a0, MobileOne-s0, PoolFormer-s12, MaxViT-tiny-TF-224, and CoAtNet-0-RW-224.
 
 Avenue Dataset
-🔗 Dropbox Link
-
+ 🔗 https://www.dropbox.com/scl/fo/uvj2i4kaqnj425rb232vt/ADTsWLQjx-Fi-eJ9C7c9cVg?rlkey=02g9u1c5ejkhi2umk0pbs96fc&st=be1ubtml&dl=0
 UCSD Ped1 Dataset
-🔗 Dropbox Link
-
+🔗 https://www.dropbox.com/scl/fo/j5zya2mz4xfqyqqgv7wac/AFxVNsxkhfVwjyf3jQuEQuM?rlkey=1ge2yikbbpw8a7smwbq63p3if&st=172oj2nx&dl=0
 UCSD Ped2 Dataset
-🔗 Dropbox Link
-
+🔗 [Dropbox Link](https://www.dropbox.com/scl/fo/lbse8zt94o24i8fyvnkd2/AMA66KNLLDbxFt3ij4EuLco?rlkey=09m8m0tygstpzow3b0n5uj5jk&st=oe274j3o&dl=0)
 UMN Dataset
-🔗 Dropbox Link
+🔗 [Dropbox Link](https://www.dropbox.com/scl/fo/095z706yk3rzhg6wd0yxa/ABbDGuAP4xsA9AMyyrRP8s0?rlkey=1ulqi6z9vzoqjxdnyqkqdazi2&st=9ieth52p&dl=0)
+
 ---
 
  <h2>Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks</h2>
