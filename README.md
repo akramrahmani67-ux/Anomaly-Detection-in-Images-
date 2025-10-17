@@ -65,7 +65,6 @@ Metrics reported:
 - Recall  
 - F1-Score  
 - ROC-AUC
-  ## 👩‍💻 Authors
 
   # Best results from pre-trained models
 
@@ -77,7 +76,7 @@ The folder `Best results from pre-trained models` contains the output figures fo
 - **UMN_LSTM_Anomaly.png**
 
 These images illustrate the best results obtained from the pre-trained feature extractors and sequential models.
-
+  ## 👩‍💻 Authors
 Akram Rahmani  
 Seyfollah Soleimani* (Corresponding Author)  
 
