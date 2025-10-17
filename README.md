@@ -77,13 +77,12 @@ The folder `Best results from pre-trained models` contains the output figures fo
 
 These images illustrate the best results obtained from the pre-trained feature extractors and sequential models.
   ## 👩‍💻 Authors
-Akram Rahmani  
-Seyfollah Soleimani* (Corresponding Author)  
-Affiliation: Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran  
-Author: Akram Rahmani  
-Email: akram.rahmani67@gmail.com  
-Corresponding Author: S. Soleimani  
-Email: s-soleimani@araku.ac.ir
+**Author:** Akram Rahmani  
+**Email:** akram.rahmani67@gmail.com  
+**Corresponding Author:** S. Soleimani  
+**Email:** s-soleimani@araku.ac.ir
+ **Affiliation:** Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran  
+
 ---
 
 ## 📜 Manuscript Status
