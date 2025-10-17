@@ -81,8 +81,7 @@ These images illustrate the best results obtained from the pre-trained feature e
 **Email:** akram.rahmani67@gmail.com  
 **Corresponding Author:** S. Soleimani  
 **Email:** s-soleimani@araku.ac.ir
-
- **Affiliation:** Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran  
+  **Affiliation:** Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran  
 ---
 
 ## 📜 Manuscript Status
