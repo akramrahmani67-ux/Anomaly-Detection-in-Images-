@@ -81,7 +81,7 @@ Akram Rahmani
 Seyfollah Soleimani* (Corresponding Author)  
 
 **Affiliation:** Department of Computer Engineering, Faculty of Engineering, Arak University, Arak 38156-8-8349, Iran 
-Author Email: ** Akram Rahmani  
+Author Email: ** akram.rahmani67@gmail.com
 **Corresponding Author Email:** s-soleimani@araku.ac.ir
 
 ---
