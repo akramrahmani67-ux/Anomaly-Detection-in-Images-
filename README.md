@@ -90,7 +90,7 @@ These images illustrate the best results obtained from the pre-trained feature e
 
 ## 📜 Manuscript Status
 **Title:** Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks  
-**Current status:** Under review at *The Visual Computer* (Springer Nature)  
+**Current status:** Under review at * Multimedia Systems * (Springer Nature)  
 > The repository will be updated following acceptance to include final revisions and full code release.
 
 ---
