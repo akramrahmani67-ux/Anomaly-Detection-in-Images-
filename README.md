@@ -100,7 +100,7 @@ These images illustrate the best results obtained from the pre-trained feature e
 @article{rahmani2025anomaly,
   title={Enhancing Image Anomaly Detection: A Hybrid Framework with Pre-Trained Models and Sequential Neural Networks},
   author={Rahmani, Akram and Soleimani, Seyfollah},
-  journal={The Visual Computer},
+  journal={ Multimedia Systems },
   year={2025},
   note={Manuscript under review; repository will be updated upon acceptance. DOI: 10.5281/zenodo.17362656}
 }
